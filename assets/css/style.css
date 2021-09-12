@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row{
+    width: 100%;
+    padding: 0px 8px;
+}
+
+.fourth{
+    width: 25%;
+}
+
+
+/* HEADER */
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 8px 16px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#header a{
+    padding: 8px 16px;
+    display: inline-block;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+#header a:hover{
+    background-color: #ccc;
+}
+
+
+.right-header{
+    float: right;
+}
+
+/* SLIDER */
+#slider{
+    position: relative;
+    /* max-width: 100%;
+    height: auto; */
+    /* background: url(/BR/assets/img/architect.jpg) no-repeat top center / cover; */
+}
+
+#slider img{
+    width: 100%;
+    height: auto;
+}
+
+#slider .title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+}
+
+#slider .BR{
+    background-color: black;
+    margin-right: 8px;
+    padding: 8px 16px;
+    opacity: 0.75;
+}
+
+/* CONTENT */
+#content{
+    padding: 8px 16px;
+}
+
+.header-content{
+    padding: 32px 16px;
+}
+
+.header-title{
+    padding: 16px 0;
+    margin: 10px 0;
+    font-size: 24px;
+    line-height: 1.5;
+    border-bottom: 1px solid #ccc;
+}
+
+.Projects-house{
+    overflow: hidden;
+}
+
+.Projects-house .item{
+    position: relative;
+    float: left;
+    padding: 0 8px;
+    margin: 0 0 16px;
+}
+
+.Projects-house .item .name-house{
+    position: absolute;
+    font-size: 15px;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+}
+
+.Projects-house .item .house-img{
+    width: 100%;
+}
+
+.paragraph{
+    text-align: justify;
+}
+
+.member{
+    overflow: hidden;
+}
+
+.member-img{
+    width: 100%;
+    filter: grayscale(70%);
+}
+
+.member-content .head{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+}
+
+.member-content .job{
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.member-content .intro{
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.member-content .button{
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.member-content .button:hover{
+    background-color: #ccc;
+}
+
+.member-item{
+    float: left;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.header-content .contact-title{
+    margin: 15px 0;
+}
+
+.header-content .form-control{
+    padding: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.header-content .send-butn{
+    cursor: pointer;
+    padding: 8px 16px;
+    margin: 16px 0;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    border: none;
+}
+
+.header-content .send-butn:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.map-pic .map{
+    width: 100%;
+    padding: 0 16px;
+}
+footer{
+    background-color: black;
+}
+
+.footer-content, .footer-content a{
+    color: white;
+}
+
+.end-page{
+    padding: 16px 0;
+}
+
+.footer-content{
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* MODAL */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-container{
+    background-color: white;
+    width: 900px;
+    max-width: calc(100% - 40px);
+    min-height: 200px;
+    position: relative;
+    animation: fade ease 0.5s;
+}
+
+.close-button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 16px;
+}
+
+.close-button:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+}
+
+.modal-header{
+    padding: 32px 16px;
+    background-color: black;
+    color: white;
+}
+
+
+.modal-header .log{
+    margin: 10px 0;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.modal-label{
+    display: block;
+    margin-top: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.modal-body{
+    padding: 0 16px;
+}
+
+.log-butn{
+    padding: 16px;
+    margin: 16px 0;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.log-butn:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+.modal-input{
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.right{
+    float: right;
+}
+
+.support{
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.footer{
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 800;
+    color: black;
+}
+
+/* Script */
+.open{
+    display: flex;
+}
+
+/* Key frame */
+
+@keyframes fade{
+    from{
+        transform: translateY(-200px);
+        opacity: 0.8;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
